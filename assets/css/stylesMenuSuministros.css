@@ -1,6 +1,7 @@
 #menuSuministros{
 	overflow: hidden;
 	display: inline-block;
+	margin-left: .7rem;
 }
 
 #tabPageSuministros{
