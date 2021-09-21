@@ -30,6 +30,7 @@
 		font-family: var(--body-font);
 		font-size: var(--normal-font-size);
 		transition: .5s;
+		overflow: hidden;
 	}
 
 	a{
@@ -169,12 +170,40 @@
 	background-color: var(--white-color);
 }
 
-.home{
-	position: fixed;
+/* =================================== BODY MENU =========================================== */
+.home_content{
+	position: relative;
+	height: 90vh;
 	width: 100%;
-	height: 100vh;
 	margin: 0  0  0 -.5rem;
-	background-color: deepskyblue;
+	transition: .5s;
+	background: rgba(139, 139, 139, 0.4);
+	overflow: hidden;
+	display: block;
+	scroll-behavior: smooth;
+}
+
+.home_content .menuDashboard{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: auto;
+	height: 89vh;
+	width: calc(100% - 27px);
+	overflow-x: hidden;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+.home_content .menuConsumo{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 89vh;
+	width: calc(100% - 27px);
 }
 
 /*=========================================== MEDIA QUERIES =============================================*/
@@ -183,7 +212,7 @@
 		margin:  calc(var(--header-height) + 1rem) 0 0 0;
 		padding-left: calc(var(--nav-width) + 2rem);
 	}
-	.home{
+	.home_content{
 		margin: 0  1rem  0  -1.5rem;
 	}
 	.header{

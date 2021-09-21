@@ -59,25 +59,26 @@
 
 #contentD1 H1{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 3.2em;
+	font-size: 5rem;
 	position: relative;
+	top: -4rem;
 	text-align: right;
 }
 #contentD1 H3{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	position: relative;
-	top: -2vh;
+	top: -8rem;
 	text-align: right;
 }
 #contentD1 H4{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 	position: relative;
-	top: -2vh;
+	top: -8rem;
 	text-align: right;
 }
-@media(max-width:  375px){
+@media screen and (max-width:  375px){
 	#contentD1 H1{
 		font-size: 1.7em;
 	}
@@ -116,22 +117,23 @@
 
 #contentD2 H1{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 3.2em;
+	font-size: 5rem;
 	position: relative;
+	top: -4rem;
 	text-align: right;
 }
 #contentD2 H3{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	position: relative;
-	top: -2vh;
+	top: -8rem;
 	text-align: right;
 }
 #contentD2 H4{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 	position: relative;
-	top: -2vh;
+	top: -8rem;
 	text-align: right;
 }
 @media(max-width:  375px){
@@ -180,25 +182,26 @@
 }
 #contentD4 H1{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 3.2em;
+	font-size: 5rem;
 	position: relative;
+	top: -4rem;
 	text-align: right;
 }
 #contentD4 H3{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	position: relative;
-	top: -2vh;
+	top: -8rem;
 	text-align: right;
 }
 #contentD4 H4{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 	position: relative;
-	top: -2vh;
+	top: -8rem;
 	text-align: right;
 }
-@media(max-width:  375px){
+@media screen and (max-width:  375px){
 	#contentD4 H1{
 		font-size: 1.7em;
 	}
@@ -211,7 +214,7 @@
 }
 
 
-@media(max-width:  375px){
+@media screen and (max-width:  375px){
 	#contentD1{
 		height: 15vh;
 	}
