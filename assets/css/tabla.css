@@ -1,0 +1,90 @@
+#menuUsuario{
+	overflow: hidden;
+	display: inline-block;
+}
+#divTitulo{
+	position: relative;
+	width: 100%;
+	height: auto;
+	color: dimgray;
+	user-select: none;
+	padding-left: 1.5%;
+}
+#TITULO{
+	font-size: 2em;
+	font-family:  "Yu Gothic Light", sans-serif;
+}
+
+#main-container
+{
+	 min-height: .01%;
+     overflow-x: auto;
+     font-family:  "Yu Gothic Light", sans-serif;
+	 font-size: 12;
+}
+
+.btncrear{
+	background-color: #1F618D;
+	color: white;
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-weight: bold;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+table{
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	border: solid 1px black;
+	padding: 10px;
+}
+
+thead{
+	background-color: #1A5276;
+	border-bottom: solid 5px #0F362D;
+	color: white;	
+	font-weight: bold;
+}
+
+tr:nth-child(even){
+	background-color: white;
+}
+
+tr:hover td{
+	background-color: #1F618D;
+	color: white;
+}
+
+/*---------------------------------------Responsividad para la Tabla---------------------------*/
+
+@media screen and (max-width: 767px) {
+    #main-container {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+
+#main-container > .table {
+        margin-bottom: 0;
+    }
+
+    #main-container > .table > thead > tr > th,
+    #main-container > .table > tbody > tr > th,
+    #main-container > .table > tfoot > tr > th,
+    #main-container > .table > thead > tr > td,
+    #main-container > .table > tbody > tr > td,
+   	#main-container > .table > tfoot > tr > td {
+        white-space: nowrap;
+    }
+
+/*---------------------------------------Responsividad para la Tabla---------------------------*/
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}

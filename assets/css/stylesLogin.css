@@ -1,0 +1,494 @@
+.fondo{
+	background-image: url("./resources/fondoLogin.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#fondoLoginDiv{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+#padreLogin{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+#formularioLoginFondo{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 15vh;
+	height: calc(100% - 40%);
+	width: calc(100% - 5%);
+	max-width: 350px;
+	min-height: 400px;
+	z-index: 100;
+	display:  block;
+	top:  5%;
+}
+#blank2{
+	position: relative;
+	height: 2vh;
+	width: 100%;
+	z-index: 104;
+	justify-content: center;
+}
+#tituloLogin{
+	position: relative;
+	height: 13vh;
+	width: 100%;
+	margin-top: 0;
+	z-index: 104;
+	justify-content: center;
+	background-image: url("./resources/Logo SBC negro 2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#blank1{
+	position: relative;
+	height: 3vh;
+	width: 100%;
+	z-index: 104;
+	justify-content: center;
+}
+#tituloUserDiv{
+	position: relative;
+	height: 4vh;
+	width: 100%;
+	z-index: 104;
+	justify-content: left;
+	padding-left: 10%;
+}
+#titUser{
+	position: relative;
+	margin-top: 0;
+	text-align: left;
+	font-size: 20px;
+	color: whitesmoke;
+	font-family:  "Yu Gothic Light", sans-serif;
+}
+#userDiv{
+	position: relative;
+	height: 8vh;
+	width: 100%;
+	z-index: 104;
+	justify-content: center;
+}
+#userNameInput{
+	position: relative;
+	height: 5vh;
+	width: 80%;
+	position: relative;
+	left: 10%;
+	top: 15%;
+	border-radius: 30px;
+	border: 0;
+	outline: 0;
+	background-color: rgba(193, 193, 193, 0.7);
+	padding-left: 3%;
+	font-size: 20px;
+	color: whitesmoke;
+	font-family:  "Yu Gothic Light", sans-serif;
+
+}
+#contraseñaInput{
+	position: relative;
+	height: 5vh;
+	width: 80%;
+	position: relative;
+	left: 10%;
+	top: 15%;
+	border-radius: 30px;
+	border: 0;
+	outline: 0;
+	background-color: rgba(193, 193, 193, 0.7);
+	padding-left: 3%;
+	font-size: 20px;
+	color: whitesmoke;
+	font-family:  "Yu Gothic Light", sans-serif;
+}
+#warningUser{
+	font-size: 18px;
+	color: rgba(255, 0, 0, 1.0);
+	font-family:  "Yu Gothic Light", sans-serif;
+	height: 18px;
+	min-height: 18px;
+	width: 100%;
+	z-index: 104;
+	justify-content: center;
+	padding-left: 0;
+	position: relative;
+  display: flex;
+  align-items: center;
+  word-break:break-all;
+}
+
+#inputDiv{
+	position: relative;
+	height: 8vh;
+	width: 100%;
+	z-index: 104;
+	justify-content: center;
+}
+
+#btnLogin{
+	height: 6vh;
+	min-height: 25px;
+	width: 83%;
+	position: relative;
+	left: 10%;
+	top: 15%;
+	border-radius: 30px;
+	border: 0;
+	outline: 0;
+	background-color: rgba(4, 137, 253, 1);
+	font-size: 25px;
+	color: whitesmoke;
+	font-family:  "Yu Gothic Light", sans-serif;
+  align-items: center;
+  padding: 0;
+}
+.On{
+	visibility: visible;
+}
+.Off{
+	visibility: hidden;
+}
+
+
+/*`----------------------------MENU DESPLEGABLE----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+.bodyMenu{
+	position: relative;
+	height: auto;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width:78px;
+	background: #1d1b31;
+	padding: 6px 14px;
+	transition: all 0.5s ease;
+}
+
+.active{
+	width: 240px;
+}
+.active .logo_content .logo{
+	opacity: 1;
+	pointer-events: none;
+}
+
+.logo_content .logo{
+	color: #fff;
+	display: flex;
+	height: 50px;
+	width: 100%;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease;
+}
+.logo_content .logo .logo_name{
+	width: 97%;
+	height: 45px;
+	background-image: url("./resources/Logo SBC negro 2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.sidebar #btn{
+	position: absolute;
+	color: #fff;
+	left: 50%;
+	top: 6px;
+	font-size: 25px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	transform: translateX(-50%);
+}
+.active #btn{
+	left: 90%;
+}
+
+.sidebar ul{
+	margin-top: 20px;
+}
+.sidebar ul li{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin: 0 5px;
+	list-style: none;
+	line-height: 50px;
+	border-radius: 12px;
+}
+.sidebar ul li .tooltip{
+	position: absolute;
+	left: 122px;
+	top: 0;
+	transform: translate(-50%, -50%);
+	border-radius: 6px;
+	height: 35px;
+	width: 122px;
+	line-height: 35px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	transition: 0s;
+	opacity: 0;
+	pointer-events: none;
+	display: block;
+	z-index: 100;
+}
+
+.active ul li .tooltip{
+	display: none;
+}
+
+.sidebar ul li:hover .tooltip{
+	top: 50%;
+	opacity: 1;
+	transition: all 0.5s ease;z
+}
+.sidebar ul li a{
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	border-radius: 12px;
+	white-space: nowrap;
+}
+.sidebar ul li a:hover{
+	color: #1d1b31;
+	background: #fff;
+}
+.sidebar ul li i{
+	height: 50px;
+	min-width: 50px;
+	border-radius: 12px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 22px;
+}
+.sidebar .links_name{
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease;
+}
+.active .links_name{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.sidebar .profile_content{
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.sidebar .profile_content .profile{
+	position: relative;
+	padding: 10px, 6px;
+	height: 60px;
+	background: none;
+	transition: all 0.5s ease;
+}
+.active .profile_content .profile{
+	background: #28253D;
+}
+.profile_content .profile .profile_details{
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+	white-space: nowrap;
+}
+
+.active .profile .profile_details{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.profile .profile_details img{
+	height: 45px;
+	width: 45px;
+	object-fit: cover;
+	border-radius: 12px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.profile .profile_details .name_job{
+	margin-left: 10px;
+}
+.profile .profile_details .name{
+	font-size: 15px;
+	font-weight: 400;
+}
+.profile .profile_details .job{
+	font-size: 12px;
+}
+.profile #log_out{
+	position: absolute;
+	left: 50%;
+	bottom: 5px;
+	transform: translateX(-50%);
+	min-width: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	border-radius: 12px;
+	text-align: center;
+	transition: all 0.5s ease;
+	background: #28253D;
+}
+.active .profile #log_out{
+	left: 88%;
+	background: none;
+}
+
+
+
+
+
+.home_content{
+	position: relative;
+	height: 100vh;
+	width: calc(100% - 78px);
+	left: 78px;
+	transition: all 0.5s ease;
+	background: rgba(139, 139, 139, 0.4);
+	overflow: hidden;
+	display: block;
+	scroll-behavior: smooth;
+}
+
+.active ~ .home_content{
+	width: calc(100% - 240px);
+	left: 240px;
+}
+
+
+.home_content .menuDashboard{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: auto;
+	height: 100vh;
+	width: calc(100% - 27px);
+	overflow-x: hidden;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	}
+
+
+.home_content .menuUsuario{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	scroll-behavior: smooth;
+}
+.home_content .menuCuentas{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+
+}
+.home_content .menuSuministros{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+}
+.home_content .menuConsumo{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+}
+
+.home_content .menuNegocios{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	
+}
+.home_content .menuFacturacion{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+}
+.home_content .menuBancos{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+}
+.home_content .menuCorreos{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+
+	/*EN DESARROLLO*/
+	font-size: 10em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.unselect{
+z-index: -1;
+}

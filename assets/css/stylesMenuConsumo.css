@@ -1,0 +1,115 @@
+#menuConsumo{
+	overflow: hidden;
+	display: block;
+}
+#titConsumo{
+	position: relative;
+	width: 100%;
+	height: auto;
+	color: dimgray;
+	padding-left: 0.5%;
+	user-select: none;
+}
+#TITCONSUMO{
+	font-size: 2em;
+	font-family:  "Yu Gothic Light", sans-serif;
+}
+@media (max-width:  375px){
+	#TITCONSUMO{
+		font-size: 6.5vw;
+	}
+}
+
+
+#btnsConsumoMenu{
+	position: relative;
+	background: rgba(0, 0, 0, 0.2);
+	width: 90%;
+	height: 2em;
+	left: 5%;
+	right: 5%;
+	display: flex;
+	overflow-x: hidden;
+	user-select: none;
+	font-family:  "Yu Gothic Light", sans-serif;
+	
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+
+	box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
+}
+#btnDia{
+	background: #333692;
+	width: 25vw;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+#btnMes{
+	width: 25vw;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+#btnAño{
+	width: 25vw;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+#tabContentConsumo{
+	position: relative;
+	background: white;
+	width: 90%;
+	height: 70vh;
+	left: 5%;
+	right: 5%;
+	display: block;
+	overflow: hidden;
+	border-style: solid;
+	border-color: #333692;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-width: 2px;
+	box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 375px){
+	.blankH{
+		height: 60px;
+	}
+	#tabContentConsumo{
+		height: 250px;
+	}
+}
+
+#diaTab{
+	position: relative;
+	background:  white;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#mesTab{
+	position: relative;
+	background:  white;
+	width: 100%;
+	height: 100%;
+}
+#añoTab{
+	position: relative;
+	background: white;
+	width: 100%;
+	height: 100%;
+}

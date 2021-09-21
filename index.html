@@ -1,102 +1,59 @@
 <!DOCTYPE html>
 <html>
-
-<!-- =================================== CSS SIDE BAR =================================-->
-<link rel="stylesheet" type="text/css" href="stylesBarMenu.css">
-
-<!-- =================================== BOX ICONS CSS=================================-->
-<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
+	<link href="./assets/css/stylesLogin.css" rel="stylesheet" type="text/css">
+
 </head>
-<body id="body-pd">
-	<header class="header" id="header">
-		<div class="header_toggle">
-			<i class='bx bx-menu' id="header-toggle"></i>
-		</div>
+<body onload="title()">
+	<div class="fondo" id="fondoLoginDiv">
+	
+	</div>
+	<div id="padreLogin">
+		<div id="formularioLoginFondo">
 
-		<div class="header_img">
-			<img src="Logo SBC color.png"> <!-- =====LOGO SBC HEADER====-->
-		</div>
-
-	</header>
-
-	<!-- ==================================SIDE BAR============================================-->
-
-	<div class="l-navbar" id="nav-bar">
-		<nav class="nav">
-			<div>
-				<a href="#" class="nav_logo"> 
-					<i class='bx bx-layer nav_logo-icon'></i> <!-- =====LOGO SBC SIDEBAR====-->
-					<span class="nav_logo-name">SBC Energy</span>
-				</a> 
-
-				<div class="nav_list"> <!-- =================LISTADO SIDEBAR INICIO==================== -->
-
-					<a href="#" class="nav_link active"> <!-- =====BUTTON DASHBOARD====-->
-						<i class='bx bx-grid-alt nav_icon'></i>
-						<span class="nav_name">Dashboard</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON USUARIO====-->
-						<i class='bx bx-user nav_icon'></i>
-						<span class="nav_name">Usuario</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON CUENTAS====-->
-						<i class='bx bx-group nav_icon'></i>
-						<span class="nav_name">Cuentas</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON SUMINISTROS====-->
-						<i class='bx bx-archive-in nav_icon'></i>
-						<span class="nav_name">Suministros</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON CONSUMO====-->
-						<i class='bx bx-plug nav_icon'></i>
-						<span class="nav_name">Consumo</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON NEGOCIOS====-->
-						<i class='bx bx-briefcase-alt-2 nav_icon'></i>
-						<span class="nav_name">Negocios</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON FACTURACION====-->
-						<i class='bx bx-receipt nav_icon'></i>
-						<span class="nav_name">Facturacion</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON BANCOS====-->
-						<i class='bx bx-dollar-circle nav_icon'></i>
-						<span class="nav_name">Cuentas Bancarias</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON CORREOS====-->
-						<i class='bx bx-mail-send nav_icon'></i>
-						<span class="nav_name">Plantillas de Correo</span>
-					</a>
-
-				</div> <!-- =================LISTADO SIDEBAR FIN==================== -->
-
+			<div id="blank2">
+				
 			</div>
 
-			<a href="#" class="nav_link"> <!-- =====BUTTON LOG-OUT====-->
-				<i class='bx bx-log-out nav_icon'></i>
-				<span class="nav_name">Salir</span>
-			</a>
+			<div id="tituloLogin">
+				<!-- <h2 id="tit">Inicio de sesion</h2> -->
+			</div>
 
-		</nav>
+			<div id="blank1">
+				
+			</div>
+
+			<div id="tituloUserDiv">
+				<h3 id="titUser">Nombre de usuario</h3>
+			</div>
+
+			<div id="userDiv">
+				<input type="text" name="username" id="userNameInput" autofocus onkeydown="userEnter(event);">
+			</div>
+
+			<div id="tituloUserDiv">
+				<h3 id="titUser">Contraseña</h3>
+			</div>
+
+			<div id="userDiv">
+				<input type="password" name="contraseña" id="contraseñaInput" onkeydown="enter(event);">
+			</div>
+
+			<div id="warningUser" class="Off">
+				Usuario o contraseña incorrectas
+			</div>
+
+			<div id="inputDiv">
+				<input type="submit" name="btnLogin" id="btnLogin" value="Iniciar" onclick="getInputs()">
+			</div>
+
+		</div>
 	</div>
-
-	<div class="home">
-		
-	</div>
-
 </body>
-<!-- =================================== SIDEBAR JS=================================-->
-<script src="main.js"></script>
+
+<script src="./assets/js/main.js"></script>
 </html>
+

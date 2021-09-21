@@ -11,7 +11,7 @@
 	--first-color-light: #B2B2B2;
 	--white-color: #F7F6FB;
 /*==================== FUENTES Y TIPOGRAFIA ===================*/
-	--body-font: 'Yu gothic', sans-serif;
+	--body-font: 'Yu Gothic Light', sans-serif;
 	--normal-font-size: 1rem;
 /*==================== Z INDEX ================================*/
 	--z-fixed: 100;
@@ -105,6 +105,11 @@
 .nav_logo{
 	margin: 1rem;
 	margin-bottom: 2rem;
+}
+.nav_logo img{
+	user-select: none;
+	width: 145px;
+	height: 45px;
 }
 
 .nav_logo-icon{

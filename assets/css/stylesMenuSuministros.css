@@ -1,0 +1,199 @@
+#menuSuministros{
+	overflow: hidden;
+	display: inline-block;
+}
+
+#divTitSuministros{
+	position: relative;
+	width: 100%;
+	height: auto;
+	color: dimgray;
+	user-select: none;
+	padding-left: 1.5%;
+}
+
+#TITSUMINISTROS{
+	font-size: 2em;
+	font-family:  "Yu Gothic Light", sans-serif;
+}
+
+@media (max-width:  375px){
+	#TITSUMINISTROS{
+		font-size: 5.5vw;
+	}
+}
+
+#tabPageSuministros{
+	position: relative;
+	width: 100%;
+	height: 6.5vh;
+	display: inline-flex;
+	padding-left: 1.5%;
+	justify-content: center;
+	align-items: center;
+}
+#btnGruposSuministros{
+	color: #6468D1;
+	font-size: 1em;
+	width: 20vw;
+	height: 100%;
+	user-select: none;
+	background: transparent;
+	border-color: #6468D1;
+	border-style: solid;
+	border-width: 2.7px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+#btnPuntosSuministros{
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 0.7em;
+	width: 20vw;
+	height: 100%;
+	user-select: none;
+	background: transparent;
+	border-color: rgba(0, 0, 0, 0.4);
+	border-style: solid;
+	border-width: 2.7px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+#blankTab{
+	position: relative;
+	background: rgba(0, 0, 0, 0.4);
+	width: 53%;
+	height: 2px;
+	top: 49%;
+}
+#agregarSuministros{
+	position: absolute;
+	background: #6468D1;
+	color: white;
+	outline: none;
+	border-style: none;
+	right: 10px;
+	display: flex;
+	width: 20vw;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.7em;
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-weight: bold;
+}
+#configBarSuministros{
+	position: relative;
+	width: 97%;
+	left: 1.5%;
+	right: 1.5%;
+	height: 10vh;
+	display: flex;
+}
+#searchBarSuministrosDiv{
+	width: 72vw;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#searchBarSuministrosInput{
+	color: dimgray;
+	width: 95%;
+	height: 50%;
+	padding-left: 5px;
+	outline: none;
+	border-radius: 32px;
+	border-style: none;
+	background: rgba(171, 171, 171, 0.3);
+	font-family:  "Yu Gothic Light", sans-serif;
+}
+#filterBySortByDivSuministros{
+	position: relative;
+	width: 100%;
+	height: inherit;
+	align-items: center;
+	justify-content: right;
+	display: flex;
+	padding: 5px;
+}
+
+#filterBySuministrosButton{
+	height: 5vh;
+	color: dimgray;
+	font-size: 0.6em;
+	font-family:  "Yu Gothic Light", sans-serif;
+	outline: none;
+	border-style: none;
+	background: rgba(171, 171, 171, 0.3);
+	margin: 5px;
+}
+#sortBySuministrosButton{
+	height: 5vh;
+	color: dimgray;
+	font-size: 0.6em;
+	font-family:  "Yu Gothic Light", sans-serif;
+	outline: none;
+	border-style: none;
+	background: rgba(171, 171, 171, 0.3);
+}
+
+@media (max-width:  375px){
+	#tabPageSuministros{
+		height: 30px;
+	}
+	#configBarSuministros{
+		height: 30px;
+	}
+	#blankTab{
+		top: 45%;
+		width: 43%;
+	}
+	#filterBySuministrosButton{
+		height: 2vh;
+		font-size: 0.3em;
+	}
+	#sortBySuministrosButton{
+		height: 2vh;
+		font-size: 0.3em;
+	}
+	#searchBarSuministrosDiv{
+		width: 100vw;
+	}
+	#agregarSuministros{
+		font-size: 0.4em;
+	}
+}
+
+#contentSuministros{
+	position: relative;
+	width: 97%;
+	left: 1.5%;
+	right: 1.5%;
+	background: white;
+	height: 66vh;
+	display: block;
+	overflow: hidden;
+}
+@media (max-width:  375px){
+	#contentSuministros{
+		height: 80vh;
+	}
+	#btnPuntosSuministros{
+		font-size: 0.4em;
+	}
+	#btnGruposSuministros{
+		font-size: 0.5em;
+	}
+}
+
+#contentGruposSuministros{
+	position: relative;
+	width: 100%;
+	height: inherit;
+}
+#contentPuntosSuministros{
+	position: relative;
+	width: 100%;
+	height: inherit;
+}

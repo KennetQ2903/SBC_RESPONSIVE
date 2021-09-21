@@ -1,0 +1,227 @@
+#menuDashboard{
+	align-items: center;
+	display: block;
+}
+
+/*--------------------------TITULO DASHBOARD------------------------------------*/
+#titDashMenuDiv{
+	width: 100%;
+	height: auto;
+	position: relative;	
+	align-items: center;
+	padding-top: 0;
+	padding-left: 0.5%;
+}
+#titDashMenuH{
+	color: dimgray;
+	font-size: 2em;
+	font-family:  "Yu Gothic Light", sans-serif;
+	user-select: none;
+}
+@media (max-width:  375px){
+	#titDashMenuH{
+		font-size: 6.2vw;
+	}
+}
+/*--------------CONTENEDOR DE IMPORTE FACTURADO-----------------------------------*/
+
+.blankH{
+	position: relative;
+	width: 100%;
+	height: 15px;
+}
+#contentD1{
+	color: white;
+	position: relative;
+	width: 80%;
+	margin: auto;
+	height: 33vh;
+	background-image: linear-gradient(
+			15deg,
+			#d6fcff 0,
+			#aee7ff 5.67%,
+			#80d1fc 33.33%,
+			#44b9f3 50%,
+			#00a1eb 66.67%,
+			#008be3 83.33%,
+			#0076db 100%
+		);
+	display: block;
+	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	padding-right: 2vw;
+	display: block;
+	user-select: none;
+}
+
+#contentD1 H1{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 3.2em;
+	position: relative;
+	text-align: right;
+}
+#contentD1 H3{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1.5em;
+	position: relative;
+	top: -2vh;
+	text-align: right;
+}
+#contentD1 H4{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1em;
+	position: relative;
+	top: -2vh;
+	text-align: right;
+}
+@media(max-width:  375px){
+	#contentD1 H1{
+		font-size: 1.7em;
+	}
+	#contentD1 H3{
+		font-size: .7em;
+	}
+	#contentD1 H4{
+		font-size: .5em;
+	}
+}
+
+#contentD2{
+	position: relative;
+	width: 80%;
+	margin: auto;
+	height: 33vh;
+	background: rgb(57,140,9);
+	background: linear-gradient(
+		237deg, 
+		rgba(57,140,9,1) 0%, 
+		rgba(56,185,15,1) 35%, 
+		rgba(78,255,0,1) 67%, 
+		rgba(36,212,80,1) 100%
+		);
+	display: block;
+	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	padding-right: 2vw;
+	display: block;
+	color: white;
+	user-select: none;
+}
+
+#contentD2 H1{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 3.2em;
+	position: relative;
+	text-align: right;
+}
+#contentD2 H3{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1.5em;
+	position: relative;
+	top: -2vh;
+	text-align: right;
+}
+#contentD2 H4{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1em;
+	position: relative;
+	top: -2vh;
+	text-align: right;
+}
+@media(max-width:  375px){
+	#contentD2 H1{
+		font-size: 1.8em;
+	}
+	#contentD2 H3{
+		font-size: .8em;
+	}
+	#contentD2 H4{
+		font-size: .6em;
+	}
+}
+
+#contentD3{
+	position: relative;
+	width: 80%;
+	margin: auto;
+	height: 70vh;
+	background: white;
+	display: block;
+	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
+}
+#contentD4{
+	position: relative;
+	width: 80%;
+	margin: auto;
+	height: 33vh;
+	background: rgb(255,235,0);
+	background: linear-gradient(29deg, 
+		rgba(255,235,0,1) 0%,
+		rgba(234,72,18,1) 49%, 
+		rgba(212,36,36,1) 100%
+		);
+	display: block;
+	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	padding-right: 2vw;
+	display: block;
+	user-select: none;
+	color: white;
+}
+#contentD4 H1{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 3.2em;
+	position: relative;
+	text-align: right;
+}
+#contentD4 H3{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1.5em;
+	position: relative;
+	top: -2vh;
+	text-align: right;
+}
+#contentD4 H4{
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1em;
+	position: relative;
+	top: -2vh;
+	text-align: right;
+}
+@media(max-width:  375px){
+	#contentD4 H1{
+		font-size: 1.7em;
+	}
+	#contentD4 H3{
+		font-size: .7em;
+	}
+	#contentD4 H4{
+		font-size: .5em;
+	}
+}
+
+
+@media(max-width:  375px){
+	#contentD1{
+		height: 15vh;
+	}
+	#contentD2{
+		height: 15vh;
+	}
+	#contentD3{
+		height: 27vh;
+	}
+	#contentD4{
+		height: 15vh;
+	}
+}
