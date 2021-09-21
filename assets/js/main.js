@@ -1,34 +1,19 @@
-/*======== MOSTRAR NAVBAR =============*/
+// ============PRIMERA CARGA DEL SISTEMA ==================================
 
-const showNavBar = (toggleId, navId, bodyId, headerId) =>{
-	const toggle = document.getElementById(toggleId),
-	nav = document.getElementById(navId),
-	bodypd = document.getElementById(bodyId),
-	headerpd = document.getElementById(headerId)
+// const contIndex = document.getElementById('contentMainIndex');
+// async function inicio(){
+// 	contIndex.src = "./Login.html";
+// }
 
-	if(toggle && nav && bodypd && headerpd){
-		toggle.addEventListener('click', ()=>{
-			nav.classList.toggle('show')
-			toggle.classList.toggle('bx-x')
-			bodypd.classList.toggle('body-pd')
-			headerpd.classList.toggle('body-pd')
-		})
-	}
+// /*======== MOSTRAR NAVBAR =============*/
+
+
+let btn = document.querySelector('#btn');
+let sidebar = document.querySelector('.sidebar');
+
+btn.onclick = function(){
+	sidebar.classList.toggle('active');
 }
-
-showNavBar('header-toggle', 'nav-bar',  'body-pd', 'header')
-/*================= LINKS ACTIVOS ============*/
-
-const linkColor = document.querySelectorAll('.nav_link')
-async function colorLink(){
-	if(linkColor){
-		linkColor.forEach(l => l.classList.remove('active'))
-		this.classList.add('active')
-	}
-}
-
-linkColor.forEach(l => l.addEventListener('click', colorLink))
-
 
 /*============================== INICIO DE SESION =============================*/
 
@@ -51,6 +36,7 @@ async function getInputs(){
 		warn.classList.add('Off');
 	}
 }
+
 async function enter(event){
 	let codigo = event.which || event.keyCode;
 	if(codigo === 13){
@@ -88,49 +74,71 @@ function title(){
 }
 
 async function actual(actualBtn){
-			let actualId = actualBtn.id;
-			switch(actualId){
-				case "btnDashboard":
-					window.document.title = `Dashboard`;					
-				break;
 
-				case "btnUser":
-					window.document.title = `Usuario`;
+	let tit = document.getElementById('titHeader');
+	let actualId = actualBtn.id;
 
-				break;
+	const ifram = document.getElementById('home');
 
-				case "btnGroup":
-					window.document.title = `Cuentas`;
-				break;
+	switch(actualId){
+		case "btnDashboard":
+			window.document.title = `Dashboard`;
+			tit.innerHTML = "Dashboard";	
+			ifram.src = "Dash.html";
+		break;
 
-				case "btnSuministros":
-					window.document.title = `Suministros`;
-				break;
+		case "btnUser":
+			window.document.title = `Usuario`;
+			tit.innerHTML = "Usuario";
+			ifram.src = "User.html";
+		break;
 
-				case "btnConsumo":
-					window.document.title = `Consumo`;
-				break;
+		case "btnGroup":
+			window.document.title = `Cuentas`;
+			tit.innerHTML = "Cuentas";
+			ifram.src = "Cuentas.html";
+		break;
 
-				case "btnNegocio":
-					window.document.title = `Negocios`;
-				break;
+		case "btnSuministros":
+			window.document.title = `Suministros`;
+			tit.innerHTML = "Suministros";
+			ifram.src = "Suministros.html";
+		break;
 
-				case "btnFacturacion":
-					window.document.title = `Facturacion`;
-				break;
+		case "btnConsumo":
+			window.document.title = `Consumo`;
+			tit.innerHTML = "Consumo";
+			ifram.src = "Consumo.html";
+		break;
 
-				case "btnBancos":
-					window.document.title = `Cuentas Bancarias`;
-				break;
+		case "btnNegocio":
+			window.document.title = `Negocios`;
+			tit.innerHTML = "Negocios";
+			ifram.src = "Negocios.html";
+		break;
 
-				case "btnCorreos":
-					window.document.title = `Correos`;
-				break;
-			}
+		case "btnFacturacion":
+			window.document.title = `Facturacion`;
+			tit.innerHTML = "Facturacion";
+			ifram.src = "Facturacion.html";
+		break;
+
+		case "btnBancos":
+			window.document.title = `Cuentas Bancarias`;
+			tit.innerHTML = "Cuentas Bancarias";
+			ifram.src = "Bancos.html";
+		break;
+
+		case "btnCorreos":
+			window.document.title = `Correos`;
+			tit.innerHTML = "Correos";
+			ifram.src = "Correos.html";
+		break;
+	}
 }
 async function logOut(){
-			window.close('Dashboard.html');
-			window.open('index.html');
+	window.open('index.html');
+	window.close('Dashboard.html');
 }
 
 
@@ -196,7 +204,12 @@ async function cargarGraficaConsumo(){
 	});
 }
 
+
+async function inicio(){
+	$("#btnDashboard").trigger("click");
+}
 async function cargarGraficaClientes(){
+
 	let grafCl = document.getElementById('grafClientes');
 	new Chart(grafCl, {
 		type: "polarArea",
@@ -245,9 +258,40 @@ async function posAño(){
 	document.getElementById('btnAño').style.background = "#333692";	
 }
 
-function posInicial(){
-window.document.title = `Dashboard`;
-$('html, body').animate({
-		scrollTop: $("#menuDashboard").offset().top
-	}, 500);
+function posGruposSuministros(){
+
+	document.getElementById('contentPuntosSuministros').style.top = 100 + '%';	
+
+	document.getElementById('btnGruposSuministros').style.color = "#6468D1";
+	document.getElementById('btnGruposSuministros').style.borderColor = "#6468D1";
+
+	document.getElementById('btnPuntosSuministros').style.color = "rgba(0, 0, 0, 0.4)";
+	document.getElementById('btnPuntosSuministros').style.borderColor = "rgba(0, 0, 0, 0.4)";
+}
+
+function posPuntosSuministros(){
+
+	document.getElementById('contentPuntosSuministros').style.top = -100 + '%';
+
+	document.getElementById('btnPuntosSuministros').style.color = "#6468D1";
+	document.getElementById('btnPuntosSuministros').style.borderColor = "#6468D1";
+
+	document.getElementById('btnGruposSuministros').style.color = "rgba(0, 0, 0, 0.4)";
+	document.getElementById('btnGruposSuministros').style.borderColor = "rgba(0, 0, 0, 0.4)";
+}
+
+
+function mostrarSpan(){
+	let homeC = document.getElementById("home");
+	homeC.classList.toggle('unselect');
+}
+function quitarSpan(){
+	let homeC = document.getElementById("home");
+	homeC.classList.toggle('unselect');
+}
+
+
+
+function title(){
+	window.document.title = "Inicio de sesion"
 }

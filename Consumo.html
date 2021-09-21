@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dashboard</title>
+	<!-- ==================================== MAIN CSS ================================= -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+
+	<!-- ==================================== CONSUMO CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuConsumo.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== BOXICONS CSS ================================= -->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ==================================== JQUERY LIB ================================= -->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--============================================GRAFICAS JS =======================================-->
+
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!--============================================ PAGE JS ============================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+
+</head>
+<body onload="cargarGraficaConsumo()">
+<!-- -------------------------------------------------------MENU CONSUMO-------------------------------------------- -->
+
+		<div class="menuConsumo" id="menuConsumo">
+			
+			<div class="blankH">
+				
+			</div>
+			<div class="blankH">
+				
+			</div>
+
+
+			<div id="btnsConsumoMenu">
+				<div id="btnDia" onclick="posDia()">
+					Dia
+				</div>
+
+				<div id="btnMes" onclick="posMes()">
+					Mes
+				</div>
+
+				<div id="btnAño" onclick="posAño()">
+					Año
+				</div>
+			</div>
+			<div id="tabContentConsumo">
+				<div id="diaTab">
+					<canvas id="grafDiaConsumo">
+						
+					</canvas>
+				</div>
+				<div id="mesTab">
+					<canvas id="grafMesConsumo" width="400" height="400">
+						
+					</canvas>
+				</div>
+				<div id="añoTab">
+					<canvas id="grafAñoConsumo">
+						
+					</canvas>
+				</div>
+
+			</div>
+
+
+		</div>
+</body>
+</html>

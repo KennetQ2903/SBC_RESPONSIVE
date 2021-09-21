@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dashboard</title>
+	<!-- ==================================== MAIN CSS ================================= -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+
+	<!-- ==================================== DASHBOARD CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuDashboard.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== CONSUMO CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuConsumo.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== SUMINISTROS CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuSuministros.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== BANCOS CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuBancos.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== TABLA CSS ================================= -->
+
+	<link href="./assets/css/tabla.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== BOXICONS CSS ================================= -->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ==================================== JQUERY LIB ================================= -->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--============================================GRAFICAS JS =======================================-->
+
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!--============================================ PAGE JS ============================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+
+</head>
+<body>
+<!-- -------------------------------------------------------MENU NEGOCIOS--------------------------------------------- -->
+
+		<div class="menuNegocios" id="menuNegocios">
+			<div id="divTitulo">
+				<h1 id="TITULO">
+					Tarifas de Venta
+				</h1>
+			</div>
+
+			<div id="main-container">
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo					
+					</button>
+				</a>	
+				<br><br>
+
+				<div id="parrafocantRegistros" style="float: left;">
+					<p>
+					Mostrar 
+					<select name="cantRegistros">
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+					registros 
+				</p>			
+				</div>
+				
+				<div id="parrafoBuscar" style="float: right;">
+					<p>
+						Buscar: 
+						<input type="text" name="buscar" placeholder="Buscar..." />
+					</p>
+				</div>
+				<br>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre de Tarifa</th>
+							<th>Tipología</th>
+							<th>Puntos de Suministro</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+
+					<tr>
+						<td>BTdfp - Casa Acueducto</td>
+						<td>BTDfp</td>				
+						<td>2</td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+						</td>
+						</tr>
+
+					<tr>
+						<td>BTdfp - Segheria</td>
+						<td>BTDfp</td>
+						<td>3</td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td>BTS - Casa Acueducto</td>
+						<td>BTS</td>
+						<td>84</td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+				</table>
+				<br>
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo			
+					</button>
+				</a>	
+			
+			</div>
+		</div>
+</body>
+</html>

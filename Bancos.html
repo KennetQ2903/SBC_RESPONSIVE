@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dashboard</title>
+	<!-- ==================================== MAIN CSS ================================= -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	
+	<!-- ==================================== BANCOS CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuBancos.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== BOXICONS CSS ================================= -->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ==================================== JQUERY LIB ================================= -->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--============================================GRAFICAS JS =======================================-->
+
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!--============================================ PAGE JS ============================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+
+</head>
+<body>
+<!-- ================================== MENU BANCOS =============================== -->
+
+		<div class="menuBancos" id="menuBancos">
+
+			<div id="barConfigBancos">
+				<div id="searchBarBancosDiv">
+					<input type="text" name="searchBarBancosInput" id="searchBarBancosInput" value="" placeholder="Buscar en...">
+				</div>
+
+
+				<div id="filterBySortByDivBancos">
+					<select id="filterByBancosButton">
+
+						<option value="0">Filtrar</option>
+						<option value="1">Nombre</option>
+						<option value="2">Codigo</option>
+
+
+					</select>
+
+					<select id="sortByBancosButton">
+						<option value="0">Ordenar</option>
+						<option value="1">A-Z</option>
+						<option value="2">Z-A</option>
+					</select>
+				</div>
+
+				<button id="agregarBancos">
+					Agregar +
+				</button>
+			</div>
+			<div id="contentBancos">
+				<table class="demo">
+					<thead>
+					<tr>
+						<th>Banco</th>
+						<th>Codigo de la cuenta</th>
+						<th>Opciones</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Banco G&T</td>
+						<td>6609-23456464-900</td>
+						<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+					</tr>
+					<tr>
+						<td>Banrural</td>
+						<td>505-436542332-3232</td>
+						<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+					</tr>
+					<tr>
+						<td>BAC</td>
+						<td>33-31232134343-222</td>
+						<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dashboard</title>
+	<!-- ==================================== MAIN CSS ================================= -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== TABLA CSS ================================= -->
+
+	<link href="./assets/css/tabla.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== BOXICONS CSS ================================= -->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ==================================== JQUERY LIB ================================= -->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--============================================ PAGE JS ============================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+
+</head>
+<body>
+	<!-- -------------------------------------------------------MENU USUARIO------------------------------ -->
+
+	<div class="menuUsuario" id="menuUsuario">
+
+			<div class="main-container">
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo					
+					</button>
+				</a>	
+				<br><br>
+
+				<div id="parrafocantRegistros" style="float: left;">
+					<p>
+					Mostrar 
+					<select name="cantRegistros">
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+					registros 
+				</p>			
+				</div>
+
+				<div id="parrafoBuscar" style="float: right;">
+					<p>
+						Buscar: 
+						<input type="text" name="buscar" placeholder="Buscar..." />
+					</p>
+				</div>
+
+				<br><br>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre Usuario</th>
+							<th>Nombre Común</th>
+							<th>Cliente</th>
+							<th>Tipología</th>
+							<th>Estado</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+
+					<tr>
+						<td>cacu01004</td>
+						<td>MARISELA FLORES MAYORGA</td>
+						<td>MARISELA FLORES MAYORGA</td>
+						<td>Cliente</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+						</td>
+					</tr>
+
+					<tr>
+						<td>cacu01005</td>
+						<td>JAVIER LOPEZ  MARTINEZ</td>
+						<td>JAVIER LOPEZ MARTINEZ</td>
+						<td>Admin</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td>cacu0101</td>
+						<td>MARCELA LISETTE FRANZ RUIZ</td>
+						<td>ECHEVA S.A.</td>
+						<td>Cliente</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+				</table>
+				<br>
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo			
+					</button>
+				</a>	
+			
+			</div>
+		
+	</div>
+</body>
+</html>

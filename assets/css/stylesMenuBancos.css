@@ -1,39 +1,22 @@
+body{
+	overflow: hidden;
+}
 #menuBancos{
 	overflow: hidden;
 	display: inline-block;
-}
-#titBancos{
-	position: relative;
-	width: 100%;
-	height: auto;
-	color: dimgray;
-	user-select: none;
-	padding-left: 1.5%;
-}
-#TITBANCOS{
-	font-size: 2em;
-	font-family:  "Yu Gothic Light", sans-serif;
-}
-@media (max-width:  375px){
-	#TITBANCOS{
-		font-size: 5.5vw;
-	}
-	#barConfigBancos{
-		height: 15px;
-	}
 }
 
 #barConfigBancos{
 	position: relative;
 	width: 96%;
-	height: 7vh;
+	height: 3rem;
 	margin: 2%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-@media (max-width:  375px){
+@media screen and (max-width:  700px){
 	#barConfigBancos{
 		height: 30px;
 	}
@@ -47,15 +30,17 @@
 	justify-content: center;
 }
 #searchBarBancosInput{
-	color: dimgray;
+	margin-left: 1rem;
+	colorblack;
 	width: inherit;
-	height: 5vh;
-	padding-left: 5px;
+	height: 1.5rem;
+	padding-left: 1rem;
 	outline: none;
 	border-radius: 32px;
 	border-style: none;
 	background: rgba(171, 171, 171, 0.3);
 	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1rem;
 }
 #filterBySortByDivBancos{
 	position: relative;
@@ -64,22 +49,21 @@
 	align-items: center;
 	justify-content: right;
 	display: flex;
-	padding: 5px;
+	margin: 1rem;
 }
 #filterByBancosButton{
 	height: 5vh;
-	margin-left: ;
-	color: dimgray;
+	color: black;
 	font-size: 0.6em;
 	font-family:  "Yu Gothic Light", sans-serif;
 	outline: none;
 	border-style: none;
 	background: rgba(171, 171, 171, 0.3);
-	margin: 5px;
+	margin: 1rem;
 }
 #sortByBancosButton{
 	height: 5vh;
-	color: dimgray;
+	color: black;
 	font-size: 0.6em;
 	font-family:  "Yu Gothic Light", sans-serif;
 	outline: none;
@@ -87,39 +71,93 @@
 	background: rgba(171, 171, 171, 0.3);
 }
 
-@media (max-width:  375px){
+@media screen and (max-width:  860px){
+	#filterBySortByDivBancos{
+		width: fit-content;
+	}
 	#filterByBancosButton{
-		height: 2vh;
-		width: 45px;
-		font-size: 0.3em;
+		margin-left: -.5rem;
+		height: 1.5rem;
+		width: 4rem;
+		font-size: .8rem;
 	}
 	#sortByBancosButton{
-		height: 2vh;
-		font-size: 0.3em;
+		margin: -.5rem;
+		height: 1.5rem;
+		width: 4.5rem;
+		font-size: .8rem;
+	}
+}
+
+
+
+@media screen and (max-width:  700px){
+	#filterByBancosButton{
+		margin-left: -.5rem;
+		height: 1.5rem;
+		width: 4rem;
+		font-size: .8rem;
+	}
+	#sortByBancosButton{
+		margin: -.5rem;
+		height: 1.5rem;
+		width: 4.5rem;
+		font-size: .8rem;
 	}
 	#searchBarBancosDiv{
-		width: 25vw;
+		width: 20rem;
+		height: 2rem;
 	}
 	#searchBarBancosInput{
-		height: 2vh;
+		height: 2rem;
+		margin-left: 0;
+	}
+}
+@media screen and (max-width:  550px){
+	#barConfigBancos{
+		display: inline-block;
+	}
+	#filterBySortByDivBancos{
+		justify-content: left;
 	}
 }
 #agregarBancos{
 	position: relative;
+	margin-right: 1rem;
 	background: #6468D1;
-	width: 40vw;
-	height: 5vh;
+	width: 50vw;
+	height: 2rem;
 	color: white;
 	outline: none;
 	border-style: none;
-	font-size: 0.8em;
+	font-size: 1rem;
 	font-weight: bold;
 	font-family:  "Yu Gothic Light", sans-serif;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }
-@media (max-width:  375px){
+
+@media screen and (max-width:  860px){
 	#agregarBancos{
-		height: 2vh;
-		font-size: 0.3em;
+		margin-right: 0;
+		height: 1.5rem;
+		width: 100px;
+		font-size: .7rem;
+	}
+}
+
+@media screen and (max-width:  700px){
+	#agregarBancos{
+		margin-right: 0;
+		height: 1.5rem;
+		width: 100px;
+		font-size: .7rem;
+	}
+}
+@media screen and (max-width:  550px){
+	#agregarBancos{
+		width: 100px;
 	}
 }
 
@@ -127,23 +165,24 @@
 	background: white;
 	position: relative;
 	width: 96%;
-	height: 65vh;
+	height: fit-content;
 	margin: 2%;
 	overflow: hidden;
 }
-@media (max-width:  375px){
-	#contentBancos{
-		height: 90vh;
-	}
-}
 
-.demo {
+
+.demo{
 	border:1px solid #C0C0C0;
 	border-collapse:collapse;
 	padding:5px;
 	width: 100%;
 	font-family:  "Yu Gothic Light", sans-serif;
+
 	color: white;
+}
+.demo thead{
+	font-size: 1.2rem;
+	text-align: center;
 }
 .demo th {
 	border:1px solid #C0C0C0;
@@ -152,9 +191,20 @@
 }
 
 .demo td {
+	font-size: 1rem;
 	text-align: center;
 	color: black;
 	border:1px solid #C0C0C0;
 	padding:5px;
 	background:#FFFFFF;
+}
+
+@media screen and (max-width:  700px){
+	.demo thead{
+		font-size: 1rem;
+		text-align: center;
+	}
+	.demo td{
+		font-size: .8rem;
+	}
 }

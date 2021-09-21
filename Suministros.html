@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dashboard</title>
+	<!-- ==================================== MAIN CSS ================================= -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	
+	<!-- ==================================== BANCOS CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuBancos.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== SUMINISTROS CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuSuministros.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== BOXICONS CSS ================================= -->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ==================================== JQUERY LIB ================================= -->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+	<!--============================================ PAGE JS ============================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+
+</head>
+<body>
+<!-- -------------------------------------------------------MENU SUMINISTROS---------------------------------------->
+
+		<div class="menuSuministros" id="menuSuministros">
+
+			<div id="tabPageSuministros">
+				<button id="btnGruposSuministros" onclick="posGruposSuministros()">
+					Grupos
+				</button>
+				<button id="btnPuntosSuministros" onclick="posPuntosSuministros()">
+					Puntos de Suministros
+				</button>
+				<button id="agregarSuministros">
+					Agregar +
+				</button>
+				<div id="blankTab">
+					
+				</div>
+			</div>
+			<div id="configBarSuministros">
+
+				<div id="searchBarSuministrosDiv">
+					<input type="text" name="searchBarSuministrosInput" id="searchBarSuministrosInput" value="" placeholder="Buscar en...">
+				</div>
+
+
+				<div id="filterBySortByDivSuministros">
+					<select id="filterBySuministrosButton">
+
+						<option value="0">Filtrar</option>
+						<option value="1">Nombre</option>
+						<option value="2">Grupo</option>
+
+
+					</select>
+
+					<select id="sortBySuministrosButton">
+						<option value="0">Ordenar</option>
+						<option value="1">A-Z</option>
+						<option value="2">Z-A</option>
+
+					</select>
+
+				</div>
+			</div>
+
+			<div id="contentSuministros">
+				<div id="contentGruposSuministros">
+					<table class="demo">
+						<thead>
+						<tr>
+							<th>Nombre del grupo</th>
+							<th>Direccion</th>
+							<th>Puntos de suministro</th>
+							<th>Opciones</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Criasersa</td>
+							<td>7ma avenida zona 10</td>
+							<td>32</td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						<tr>
+							<td>Casa Real</td>
+							<td>zona 15 guatemala</td>
+							<td>66</td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						<tr>
+							<td>Hacienda flores</td>
+							<td>Valles de navarra</td>
+							<td>90</td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="contentPuntosSuministros">
+					<table class="demo">
+						<thead>
+						<tr>
+							<th>Nombre punto de suministro</th>
+							<th>Grupo</th>
+							<th>Usuario actual</th>
+							<th>Estado</th>
+							<th>Opciones</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>0101</td>
+							<td>Criasersa</td>
+							<td>Admin_</td>
+							<td><i class='bx bxs-check-circle'></i></td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						<tr>
+							<td>CA456</td>
+							<td>Casa Real</td>
+							<td>Admin_</td>
+							<td><i class='bx bx-check-circle'></i></td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						<tr>
+							<td>VAL56</td>
+							<td>Hacienda flores</td>
+							<td>Admin_</td>
+							<td><i class='bx bxs-check-circle'></i></td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+</body>
+</html>

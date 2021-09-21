@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dashboard</title>
+	<!-- ==================================== MAIN CSS ================================= -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+
+	<!-- ==================================== DASHBOARD CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuDashboard.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== BOXICONS CSS ================================= -->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ==================================== JQUERY LIB ================================= -->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--============================================GRAFICAS JS =======================================-->
+
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!--============================================ PAGE JS ============================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+</head>
+
+<body onload="cargarGraficaClientes();">
+	<div class="menuDashboard" id="menuDashboard">
+
+				<div class="blankH">
+					
+				</div>
+					<div id="contentD1">
+						<h1>17,923.54</h1>
+						<h3>GTQ.</h3>
+						<h4>Importe facturado en el año corriente 2021</h4>
+					</div>
+				<div class="blankH">
+					
+				</div>
+					<div id="contentD2">
+						<h1>17,923.54</h1>
+						<h3>GTQ.</h3>
+						<h4>Importe facturado total</h4>
+					</div>
+				<div class="blankH">
+					
+				</div>
+					<div id="contentD3">
+						<canvas id="grafClientes">
+							
+						</canvas>
+					</div>
+				<div class="blankH">
+					
+				</div>
+					<div id="contentD4">
+						<h1>3,364.829</h1>
+						<h3>Kw/h</h3>
+						<h4>Consumo total representado en kw/h</h4>
+					</div>
+				<div class="blankH">
+					
+				</div>
+		</div>
+</body>
+
+</html>

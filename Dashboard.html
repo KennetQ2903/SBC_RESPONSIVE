@@ -1,224 +1,155 @@
 <!DOCTYPE html>
-<html>
 
-<!-- =================================== CSS SIDE BAR =================================-->
-<link rel="stylesheet" type="text/css" href="./assets/css/stylesBarMenu.css">
-
-<!-- =================================== BOX ICONS CSS=================================-->
-<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet' media="none" onload="if(media != 'all') media = 'all'">
-
-<!-- ================================= MENU DASHBOARD CSS=================================-->
-<link href="./assets/css/stylesMenuDashboard.css" rel="stylesheet" type="text/css">
-
-<!-- =============================== MENU CONSUMO CSS=================================-->
-<link href="./assets/css/stylesMenuConsumo.css" rel="stylesheet" type="text/css">
-
-<!-- ============================== MENU SUMINISTROS CSS=================================-->
-<link href="./assets/css/stylesMenuSuministros.css" rel="stylesheet" type="text/css">
-
-<!-- ===============================MENU BANCOS CSS=================================-->
-<link href="./assets/css/stylesMenuBancos.css" rel="stylesheet" type="text/css">
-
-<!-- ===============================TABLAS CSS=================================-->
-<link href="./assets/css/tabla.css" rel="stylesheet" type="text/css">
-
+<html lang="en">
 
 <head>
-	<!-- =================================== JQUERY =======================================-->
-
-	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 	<meta charset="utf-8">
 
-	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dashboard</title>
+	<!-- ==================================== MAIN CSS ================================= -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+
+	<!-- ==================================== DASHBOARD CSS ================================= -->
+
+	<link href="./assets/css/stylesMenuDashboard.css" rel="stylesheet" type="text/css">
+
+	
+
+	<!-- ==================================== BOXICONS CSS ================================= -->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ==================================== JQUERY LIB ================================= -->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	
+
+	<!--============================================ PAGE JS ============================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+
 </head>
 
-<body id="body-pd" onload="cargarGraficaClientes(); posInicial()">
-	<header class="header" id="header">
-		<div class="header_toggle">
-			<i class='bx bx-menu' id="header-toggle"></i>
-		</div>
+<body class="bodyMenu" onload="inicio()">
 
-		<div class="header_img">
-			
-		</div>
+<!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
 
-	</header>
+	<div class="sidebar">
 
-	<!-- ==================================SIDE BAR============================================-->
-
-	<div class="l-navbar" id="nav-bar">
-		<nav class="nav">
-			<div>
-				<a href="#" class="nav_logo"> 
-					<i class='bx bx-layer nav_logo-icon'></i> <!-- =====LOGO SBC SIDEBAR====-->
-					<img src="./resources/Logo SBC negro 2.png">
-				</a> 
-
-				<div class="nav_list"> <!-- =================LISTADO SIDEBAR INICIO==================== -->
-
-					<a href="#menuDashboard" class="nav_link active"> <!-- =====BUTTON DASHBOARD====-->
-						<i class='bx bx-grid-alt nav_icon' id="btnDashboard" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnDashboard" onclick="actual(this)">Dashboard</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON USUARIO====-->
-						<i class='bx bx-user nav_icon'id="btnUser" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnUser" onclick="actual(this)">Usuario</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON CUENTAS====-->
-						<i class='bx bx-group nav_icon' id="btnGroup" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnGroup" onclick="actual(this)" >Cuentas</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON SUMINISTROS====-->
-						<i class='bx bx-archive-in nav_icon' id="btnSuministros" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnSuministros" onclick="actual(this)">Suministros</span>
-					</a>
-
-					<a href="#menuConsumo" class="nav_link"> <!-- =====BUTTON CONSUMO====-->
-						<i class='bx bx-plug nav_icon' id="btnConsumo" onclick="actual(this); cargarGraficaConsumo()"></i>
-						<span class="nav_name" id="btnConsumo" onclick="actual(this); cargarGraficaConsumo()">Consumo</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON NEGOCIOS====-->
-						<i class='bx bx-briefcase-alt-2 nav_icon' id="btnNegocio" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnNegocio" onclick="actual(this)">Negocios</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON FACTURACION====-->
-						<i class='bx bx-receipt nav_icon' id="btnFacturacion" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnFacturacion" onclick="actual(this)">Facturacion</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON BANCOS====-->
-						<i class='bx bx-dollar-circle nav_icon' id="btnBancos" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnBancos" onclick="actual(this)">Cuentas Bancarias</span>
-					</a>
-
-					<a href="#" class="nav_link"> <!-- =====BUTTON CORREOS====-->
-						<i class='bx bx-mail-send nav_icon' id="btnCorreos" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnCorreos" onclick="actual(this)">Plantillas de Correo</span>
-					</a>
-
-				</div> <!-- =================LISTADO SIDEBAR FIN==================== -->
-
-			</div>
-
-			<a href="#" class="nav_link"> <!-- =====BUTTON LOG-OUT====-->
-				<i class='bx bx-log-out nav_icon' id="log_out" onclick="logOut();"></i>
-				<span class="nav_name" id="log_out" onclick="logOut();">Salir</span>
-			</a>
-
-		</nav>
-	</div>
-
-	<div class="home_content" id="home">
-		<!-- ----------------------------------------------------MENU DASHBOARD------------------------------------ -->
-
-		<div class="menuDashboard" id="menuDashboard">
-
-				<!-- <div id="titDashMenuDiv">
-					<h1 id="titDashMenuH">Dashboard</h1>
-				</div> -->
-
-				<div class="blankH">
-					
-				</div>
-					<div id="contentD1">
-						<h1>17,923.54</h1>
-						<h3>GTQ.</h3>
-						<h4>Importe facturado en el año corriente 2021</h4>
-					</div>
-				<div class="blankH">
-					
-				</div>
-					<div id="contentD2">
-						<h1>17,923.54</h1>
-						<h3>GTQ.</h3>
-						<h4>Importe facturado total</h4>
-					</div>
-				<div class="blankH">
-					
-				</div>
-					<div id="contentD3">
-						<canvas id="grafClientes">
-							
-						</canvas>
-					</div>
-				<div class="blankH">
-					
-				</div>
-					<div id="contentD4">
-						<h1>3,364.829</h1>
-						<h3>Kw/h</h3>
-						<h4>Consumo total representado en kw/h</h4>
-					</div>
-				<div class="blankH">
-					
-				</div>
-		</div>
-
-		<!-- ----------------------------------------MENU CONSUMO----------------------------------- -->
-
-		<div class="menuConsumo" id="menuConsumo">
-			
-			<div class="blankH">
+		<div class="logo_content">
+			<div class="logo">
+				<div class="logo_name">
 				
-			</div>
-			<div class="blankH">
-				
-			</div>
-
-
-			<div id="btnsConsumoMenu">
-				<div id="btnDia" onclick="posDia()">
-					Dia
-				</div>
-
-				<div id="btnMes" onclick="posMes()">
-					Mes
-				</div>
-
-				<div id="btnAño" onclick="posAño()">
-					Año
 				</div>
 			</div>
-			<div id="tabContentConsumo">
-				<div id="diaTab">
-					<canvas id="grafDiaConsumo">
-						
-					</canvas>
-				</div>
-				<div id="mesTab">
-					<canvas id="grafMesConsumo" width="400" height="400">
-						
-					</canvas>
-				</div>
-				<div id="añoTab">
-					<canvas id="grafAñoConsumo">
-						
-					</canvas>
-				</div>
-
-			</div>
-
-
+			<i class='bx bx-menu' id="btn"></i>
 		</div>
 
+		<ul class="nav_list" style="list-style-type: none;">
+			<li>
+				<a href="#menuDashboard" class="link_name">
+					<i class='bx bx-grid-alt' id="btnDashboard" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name" id="btnDashboard" onclick="actual(this)">Dashboard</span>
+				</a>
+				<span class="tooltip">Dashboard</span>
+			</li>
+			<li>
+				<a href="#menuUsuario" class="link_name">
+					<i class='bx bx-user' id="btnUser" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name" id="btnUser" onclick="actual(this)">Usuario</span>
+				</a>
+				<span class="tooltip">Usuario</span>
+			</li>
+			<li>
+				<a href="#menuCuentas" class="link_name">
+					<i class='bx bxs-group' id="btnGroup" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name" id="btnGroup" onclick="actual(this)">Cuentas</span>
+				</a>
+				<span class="tooltip">Cuentas</span>
+			</li>
+			<li>
+				<a href="#menuSuministros" class="link_name">
+					<i class='bx bxs-archive-in' id="btnSuministros" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name" id="btnSuministros" onclick="actual(this)">Suministros</span>
+				</a>
+				<span class="tooltip">Suministros</span>
+			</li>
+			<li>
+
+				<a href="#menuConsumo" class="link_name">
+					<i class='bx bx-plug' id="btnConsumo" onclick="actual(this); cargarGraficaConsumo()" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name" id="btnConsumo" onclick="actual(this); cargarGraficaConsumo()">Consumo</span>
+				</a>
+
+				<span class="tooltip">Consumo</span>
+			</li>
+			<li>
+				<a href="#menuNegocios" class="link_name">
+					<i class='bx bxs-briefcase-alt-2' id="btnNegocio" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name" id="btnNegocio" onclick="actual(this)">Negocios</span>
+				</a>
+				<span class="tooltip">Negocios</span>
+			</li>
+			<li>
+				<a href="#menuFacturacion" class="link_name">
+					<i class='bx bxs-receipt' id="btnFacturacion" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name" id="btnFacturacion" onclick="actual(this)">Facturacion</span>
+				</a>
+				<span class="tooltip">Facturacion</span>
+			</li>
+			<li>
+				<a href="#menuBancos" class="link_name">
+					<i class='bx bxs-dollar-circle' id="btnBancos" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name"  id="btnBancos" onclick="actual(this)">Cuentas bancarias</span>
+				</a>
+				<span class="tooltip">Bancos</span>
+			</li>
+			<li>
+				<a href="#menuCorreos" class="link_name">
+					<i class='bx bx-envelope' id="btnCorreos" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
+					<span class="links_name"  id="btnCorreos" onclick="actual(this)">Plantillas de correo</span>
+				</a>
+				<span class="tooltip">Correo</span>
+			</li>
+		</ul>
+
+		<div class="profile_content">
+			<div class="profile">
+				<div class="profile_details">
+					<img src="./resources/user_icon.png">
+					<div class="name_job">
+						<div class="name">admin_</div>
+						<div class="job">Administrator</div>
+					</div>
+				</div>
+				<i class='bx bx-log-out' id="log_out" onclick="logOut();"></i>
+			</div>
+		</div>
 
 	</div>
+<!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
+
+<!-- ========================================== HEADER ================================================-->
+
+	<div id="titulosHeader">
+		<h1 id="titHeader"></h1>
+	</div>
+
+
+<!-- ------------------------------MENU PRINCIPAL (PANTALLA) INICIO-------------------------------------- -->
+
+	<iframe class="home_content" id="home" frameborder="0" src="">
+
+	</iframe>
+
+	<!-- ------------------------------MENU PRINCIPAL (PANTALLA) FIN-------------------------------------- -->
 
 </body>
 
-	<!-- ================================== GRAFICAS JS ==============================-->
-
-	<script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-	<!-- =================================== PAGE JS=================================-->
-
-	<script async src="./assets/js/main.js"></script>
-	
 </html>
-

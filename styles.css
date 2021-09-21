@@ -1,3 +1,7 @@
+
+
+
+/*========================LOGIN HTML==========================*/
 .fondo{
 	background-image: url("./resources/fondoLogin.jpg");
 	background-size: cover;
@@ -162,7 +166,43 @@
 }
 
 
-/*`----------------------------MENU DESPLEGABLE----------------------------------*/
+/* ======================================== HEADER ==================================================== */
+
+#titulosHeader{
+	position: fixed;
+	top: 0;
+	left: 78px;
+	width: calc(100% - 78px);
+	height: 10vh;
+	background: white;
+	transition: .5s;
+	z-index: 100;
+	align-items: center;
+	color: dimgray;
+	display: flex;
+	padding: 1rem;
+	-webkit-user-select:  none;
+	user-select: none;
+}
+
+#titulosHeader h1{
+	font-size: 3rem;
+	font-family: "Yu Gothic Light", sans-serif;
+}
+
+.active ~ #titulosHeader{
+	left: 240px;
+	width: calc(100% - 240px);
+}
+
+@media screen and (max-width:  700px){
+	#titulosHeader{
+		left: 0;
+		width: 100%;
+	}
+}
+
+/* ========================================== MENU DESPLEGABLE ================================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -172,12 +212,15 @@
   font-family: "Poppins" , sans-serif;
 }
 
+*,::before,::after{
+		box-sizing: border-box;
+	}
+
 .bodyMenu{
 	position: relative;
 	height: auto;
 	min-height: 100vh;
 	width: 100%;
-	display: flex;
 	overflow: hidden;
 }
 .sidebar{
@@ -190,7 +233,6 @@
 	padding: 6px 14px;
 	transition: all 0.5s ease;
 }
-
 .active{
 	width: 240px;
 }
@@ -282,10 +324,12 @@
 	border-radius: 12px;
 	white-space: nowrap;
 }
+
 .sidebar ul li a:hover{
 	color: #1d1b31;
 	background: #fff;
 }
+
 .sidebar ul li i{
 	height: 50px;
 	min-width: 50px;
@@ -365,119 +409,136 @@
 	transition: all 0.5s ease;
 	background: #28253D;
 }
+.profile #log_out:hover{
+	color: #1d1b31;
+	background: #FFF;
+}
 .active .profile #log_out{
 	left: 88%;
 	background: none;
 }
+.active .profile #log_out:hover{
+	color: #FFf;
+	background: none;
+}
 
+@media screen and (max-width:  700px){
+	.sidebar{
+		left: -30%;
+	}
+}
 
-
-
+/* ====================================== HOME ==================================== */
 
 .home_content{
 	position: relative;
-	height: 100vh;
+	height: 90vh;
 	width: calc(100% - 78px);
 	left: 78px;
-	transition: all 0.5s ease;
+	top: 10vh;
+	transition: .5s;
 	background: rgba(139, 139, 139, 0.4);
+	/*background: deepskyblue;*/
 	overflow: hidden;
-	display: block;
-	scroll-behavior: smooth;
+	/*display: block;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.active ~ .home_content{
+	width: calc(100% - 240px);
+	left: 240px;
 }
 
 
-
-
-.home_content .menuDashboard{
+.menuDashboard{
 	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
 	margin: auto;
-	height: 100vh;
-	width: calc(100% - 27px);
+	height: inherit;
+	width: inherit;
 	overflow-x: hidden;
-	overflow-y: auto;
-	scroll-behavior: smooth;
+	overflow-y:scroll;
 	}
+#menuDashboard::-webkit-scrollbar{
+	display: none;
+}
+.menuUsuario{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	height: 100vh;
+	width: calc(100% - 27px);
+	overflow: hidden;
+}
+.menuCuentas{
+	position: relative;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	height: 100vh;
+	width: calc(100% - 27px);
+	overflow: hidden;
 
-
-.home_content .menuUsuario{
-	position: relative;
-	font-size: 25px;
-	font-weight: 500;
-	color: #1d1b31;
-	margin: 12px;
-	height: 100vh;
-	width: calc(100% - 27px);
-	scroll-behavior: smooth;
 }
-.home_content .menuCuentas{
+.menuSuministros{
 	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
-	margin: 12px;
-	height: 100vh;
-	width: calc(100% - 27px);
-
-}
-.home_content .menuSuministros{
-	position: relative;
-	font-size: 25px;
-	font-weight: 500;
-	color: #1d1b31;
-	margin: 12px;
-	height: 100vh;
+	height: 90vh;
+	overflow: hidden;
 	width: calc(100% - 27px);
 }
-.home_content .menuConsumo{
+.menuConsumo{
 	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
-	margin: 12px;
-	height: 100vh;
-	width: calc(100% - 27px);
+	height: 90vh;
+	width: inherit;
+	overflow: hidden;
 }
 
-.home_content .menuNegocios{
+.menuNegocios{
 	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
-	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
-	
+	overflow: hidden;
 }
-.home_content .menuFacturacion{
+.menuFacturacion{
 	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
-	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
+	overflow: hidden;
 }
-.home_content .menuBancos{
+.menuBancos{
 	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
-	margin: 12px;
-	height: 100vh;
-	width: calc(100% - 27px);
+	height: 90vh;
+	width: 100%;
+	overflow: hidden;
 }
-.home_content .menuCorreos{
+.menuCorreos{
 	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
-	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
+	overflow: hidden;
 
 	/*EN DESARROLLO*/
 	font-size: 10em;
@@ -489,3 +550,12 @@
 .unselect{
 z-index: -1;
 }
+
+@media screen and (max-width:  700px){
+	.home_content{
+		left: 0;
+		width: 100%;
+	}
+}
+
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dashboard</title>
+	<!-- ==================================== MAIN CSS ================================= -->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== TABLA CSS ================================= -->
+
+	<link href="./assets/css/tabla.css" rel="stylesheet" type="text/css">
+
+	<!-- ==================================== BOXICONS CSS ================================= -->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ==================================== JQUERY LIB ================================= -->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+	<!--============================================ PAGE JS ============================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+
+</head>
+<body>
+	<!-- -------------------------------------------------------MENU CUENTAS-------------------------------------------- -->
+
+		<div class="menuCuentas" id="menuCuentas">
+
+			<div id="main-container">
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo					
+					</button>
+				</a>	
+				<br><br>
+
+				<div id="parrafocantRegistros" style="float: left;">
+					<p>
+					Mostrar 
+					<select name="cantRegistros">
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+					registros 
+				</p>			
+				</div>
+				
+				<div id="parrafoBuscar" style="float: right;">
+					<p>
+						Buscar: 
+						<input type="text" name="buscar" placeholder="Buscar..." />
+					</p>
+				</div>
+				<br>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre Cliente</th>
+							<th>Dirección</th>
+							<th>Tipología</th>
+							<th>Estado</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+
+					<tr>
+						<td>AGROPECUARIA LEBANIEGA, S.A.</td>
+						<td>EDIFICIO CASA ACUEDUCTO, 3A. AVENIDA 20-96, ZONA 10 Apto. 1103 - GUATEMALA - Guatemala</td>
+						<td>Particular</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+						</td>
+					</tr>
+
+					<tr>
+						<td>ALAN AUGUSTO SOSA ALVARADO</td>
+						<td>14 Avenida 9-00, Zona 14 Edificio Segheria, Torre 1, Apto 0701 - Guatemala - Guatemala</td>
+						<td>Particular</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td>ALAN WALDEMAR DUARTE BARRIOS</td>
+						<td>EDIFICIO SEGHERIA TORRE 2 14 AVENIDA 9-00 ZONA 14. APTO. 805 - GUATEMALA - Guatemala</td>
+						<td>Particular</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+				</table>
+				<br>
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo			
+					</button>
+				</a>	
+			
+			</div>
+		</div>
+</body>
+</html>

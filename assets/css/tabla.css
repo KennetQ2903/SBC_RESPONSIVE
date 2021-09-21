@@ -1,12 +1,28 @@
-#menuUsuario{
+body{
 	overflow: hidden;
+}
+#menuUsuario{
+	overflow-x: hidden;
+	overflow-y: scroll;
 	display: inline-block;
+}
+#menuUsuario::-webkit-scrollbar{
+	display: none;
+}
+#menuCuentas{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	display: inline-block;
+}
+#menuCuentas::-webkit-scrollbar{
+	display: none;
 }
 #divTitulo{
 	position: relative;
 	width: 100%;
 	height: auto;
 	color: dimgray;
+	-webkit-user-select:  none;
 	user-select: none;
 	padding-left: 1.5%;
 }

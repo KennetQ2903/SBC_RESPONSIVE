@@ -3,30 +3,10 @@
 	display: inline-block;
 }
 
-#divTitSuministros{
-	position: relative;
-	width: 100%;
-	height: auto;
-	color: dimgray;
-	user-select: none;
-	padding-left: 1.5%;
-}
-
-#TITSUMINISTROS{
-	font-size: 2em;
-	font-family:  "Yu Gothic Light", sans-serif;
-}
-
-@media (max-width:  375px){
-	#TITSUMINISTROS{
-		font-size: 5.5vw;
-	}
-}
-
 #tabPageSuministros{
 	position: relative;
 	width: 100%;
-	height: 6.5vh;
+	height: 3.1rem;
 	display: inline-flex;
 	padding-left: 1.5%;
 	justify-content: center;
@@ -34,9 +14,10 @@
 }
 #btnGruposSuministros{
 	color: #6468D1;
-	font-size: 1em;
+	font-size: 2rem;
 	width: 20vw;
 	height: 100%;
+	-webkit-user-select:  none;
 	user-select: none;
 	background: transparent;
 	border-color: #6468D1;
@@ -48,9 +29,10 @@
 }
 #btnPuntosSuministros{
 	color: rgba(0, 0, 0, 0.4);
-	font-size: 0.7em;
+	font-size: 1.2rem;
 	width: 20vw;
 	height: 100%;
+	-webkit-user-select:  none;
 	user-select: none;
 	background: transparent;
 	border-color: rgba(0, 0, 0, 0.4);
@@ -78,7 +60,7 @@
 	width: 20vw;
 	justify-content: center;
 	align-items: center;
-	font-size: 0.7em;
+	font-size: 1.2rem;
 	font-family:  "Yu Gothic Light", sans-serif;
 	font-weight: bold;
 }
@@ -98,15 +80,16 @@
 	justify-content: center;
 }
 #searchBarSuministrosInput{
-	color: dimgray;
+	color: black;
 	width: 95%;
-	height: 50%;
-	padding-left: 5px;
+	height: 2rem;
+	padding-left: 1rem;
 	outline: none;
 	border-radius: 32px;
 	border-style: none;
 	background: rgba(171, 171, 171, 0.3);
 	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1.5rem;
 }
 #filterBySortByDivSuministros{
 	position: relative;
@@ -137,31 +120,28 @@
 	border-style: none;
 	background: rgba(171, 171, 171, 0.3);
 }
-
-@media (max-width:  375px){
-	#tabPageSuministros{
-		height: 30px;
+@media screen and (max-width:  700px){
+	#btnGruposSuministros{
+		font-size: 1.5rem;
 	}
-	#configBarSuministros{
-		height: 30px;
+	#btnPuntosSuministros{
+		font-size: 1rem;
 	}
-	#blankTab{
-		top: 45%;
-		width: 43%;
+}
+@media screen and (max-width:  550px){
+	#btnGruposSuministros{
+		font-size: 1.5rem;
 	}
-	#filterBySuministrosButton{
-		height: 2vh;
-		font-size: 0.3em;
+}
+@media screen and (max-width:  450px){
+	#btnPuntosSuministros{
+		font-size: 1rem;
 	}
-	#sortBySuministrosButton{
-		height: 2vh;
-		font-size: 0.3em;
-	}
-	#searchBarSuministrosDiv{
-		width: 100vw;
+	#btnGruposSuministros{
+		font-size: 1.2rem;
 	}
 	#agregarSuministros{
-		font-size: 0.4em;
+		font-size: 1rem;
 	}
 }
 
@@ -170,21 +150,9 @@
 	width: 97%;
 	left: 1.5%;
 	right: 1.5%;
-	background: white;
 	height: 66vh;
 	display: block;
 	overflow: hidden;
-}
-@media (max-width:  375px){
-	#contentSuministros{
-		height: 80vh;
-	}
-	#btnPuntosSuministros{
-		font-size: 0.4em;
-	}
-	#btnGruposSuministros{
-		font-size: 0.5em;
-	}
 }
 
 #contentGruposSuministros{
