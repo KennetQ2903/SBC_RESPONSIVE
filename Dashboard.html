@@ -24,10 +24,24 @@
 
 
 <head>
+
+	<!-- ================================== GRAFICAS JS ==============================-->
+
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- =================================== SIDEBAR JS=================================-->
+
+	<script async src="./assets/js/main.js"></script>
+
+	<!-- =================================== JQUERY =======================================-->
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 	<meta charset="utf-8">
 	<title></title>
 </head>
-<body id="body-pd">
+
+<body id="body-pd" onload="cargarGraficaClientes(); posInicial()">
 	<header class="header" id="header">
 		<div class="header_toggle">
 			<i class='bx bx-menu' id="header-toggle"></i>
@@ -72,8 +86,8 @@
 					</a>
 
 					<a href="#menuConsumo" class="nav_link"> <!-- =====BUTTON CONSUMO====-->
-						<i class='bx bx-plug nav_icon' id="btnConsumo" onclick="actual(this)"></i>
-						<span class="nav_name" id="btnConsumo" onclick="actual(this)">Consumo</span>
+						<i class='bx bx-plug nav_icon' id="btnConsumo" onclick="actual(this); cargarGraficaConsumo()"></i>
+						<span class="nav_name" id="btnConsumo" onclick="actual(this); cargarGraficaConsumo()">Consumo</span>
 					</a>
 
 					<a href="#" class="nav_link"> <!-- =====BUTTON NEGOCIOS====-->
@@ -205,13 +219,13 @@
 	</div>
 
 </body>
-
+<script type="text/javascript">
+	async function posInicial(){
+	$('html, body').animate({
+			scrollTop: $("#menuDashboard").offset().top
+		}, 500);
+	}
+</script>
+	
 </html>
 
-<!-- ================================== GRAFICAS JS ==============================-->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- =================================== SIDEBAR JS=================================-->
-
-<script src="./assets/js/main.js"></script>
