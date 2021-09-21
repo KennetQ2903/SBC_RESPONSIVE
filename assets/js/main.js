@@ -245,7 +245,8 @@ async function posAño(){
 	document.getElementById('btnAño').style.background = "#333692";	
 }
 
-async function posInicial(){
+function posInicial(){
+window.document.title = `Dashboard`;
 $('html, body').animate({
 		scrollTop: $("#menuDashboard").offset().top
 	}, 500);
