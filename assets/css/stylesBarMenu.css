@@ -197,6 +197,10 @@
 	scroll-behavior: smooth;
 }
 
+.menuDashboard::-webkit-scrollbar{
+	display: none;
+}
+
 .home_content .menuConsumo{
 	position: relative;
 	font-size: 25px;
