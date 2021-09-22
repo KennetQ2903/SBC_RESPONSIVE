@@ -152,6 +152,9 @@
 	#btnPuntosSuministros{
 		font-size: .8rem;
 	}
+	#btnGruposSuministros{
+		font-size: 1rem;
+	}
 }
 
 #contentSuministros{
