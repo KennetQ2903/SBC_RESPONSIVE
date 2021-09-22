@@ -14,6 +14,7 @@
 	align-items: center;
 }
 #btnGruposSuministros{
+	outline: none;
 	color: #6468D1;
 	font-size: 2rem;
 	width: 20vw;
@@ -29,6 +30,7 @@
 	border-right-width: 0px;
 }
 #btnPuntosSuministros{
+	outline: none;
 	color: rgba(0, 0, 0, 0.4);
 	font-size: 1.2rem;
 	width: 20vw;
