@@ -295,3 +295,19 @@ function quitarSpan(){
 function title(){
 	window.document.title = "Inicio de sesion"
 }
+
+
+/* ============================= MENU MOVIL =======================*/
+
+document.getElementById('menuMovil').addEventListener('click', ()=>{
+	if(!document.querySelector('#barMenu.movilActive')){
+		document.querySelector('#boxMenuMovil').classList.toggle('bx-x');
+		document.querySelector('#barMenu').classList.remove('sidebar');
+		document.querySelector('#barMenu').classList.toggle('movilActive');
+	}
+	else{
+		document.querySelector('#boxMenuMovil').classList.toggle('bx-x');
+		document.querySelector('#barMenu').classList.add('sidebar');
+		document.querySelector('#barMenu').classList.toggle('movilActive');
+	}
+});

@@ -185,11 +185,35 @@
 	user-select: none;
 }
 
+#menuMovil{
+	left: -100%;
+	position: absolute;
+	transition: .3s;
+	visibility: hidden;
+}
+#menuMovil i{
+	font-size: 3rem;
+}
 #titulosHeader h1{
 	font-size: 3rem;
 	font-family: "Yu Gothic Light", sans-serif;
 }
 
+.movilActive{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width:78px;
+	background: #1d1b31;
+	padding: 6px 14px;
+	transition: .5s;
+}
+
+.movilActive ~ #titulosHeader{
+	left: 78px;
+	width: calc(100% - 78px);
+}
 .active ~ #titulosHeader{
 	left: 240px;
 	width: calc(100% - 240px);
@@ -199,6 +223,14 @@
 	#titulosHeader{
 		left: 0;
 		width: 100%;
+	}
+	#titulosHeader h1{
+		position: relative;
+		left: 2rem;
+	}
+	#menuMovil{
+		visibility: visible;
+		left: 0;
 	}
 }
 
@@ -231,9 +263,10 @@
 	width:78px;
 	background: #1d1b31;
 	padding: 6px 14px;
-	transition: all 0.5s ease;
+	transition: .5s;
 }
 .active{
+	left: 0;
 	width: 240px;
 }
 .active .logo_content .logo{
@@ -259,7 +292,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.sidebar #btn{
+#btn{
 	position: absolute;
 	color: #fff;
 	left: 50%;
@@ -275,10 +308,10 @@
 	left: 90%;
 }
 
-.sidebar ul{
+#barMenu ul{
 	margin-top: 20px;
 }
-.sidebar ul li{
+#barMenu ul li{
 	position: relative;
 	height: 50px;
 	width: 100%;
@@ -287,7 +320,8 @@
 	line-height: 50px;
 	border-radius: 12px;
 }
-.sidebar ul li .tooltip{
+
+  ul li .tooltip{
 	position: absolute;
 	left: 122px;
 	top: 0;
@@ -306,16 +340,17 @@
 	z-index: 100;
 }
 
+
 .active ul li .tooltip{
 	display: none;
 }
 
-.sidebar ul li:hover .tooltip{
+#barMenu ul li:hover .tooltip{
 	top: 50%;
 	opacity: 1;
 	transition: all 0.5s ease;z
 }
-.sidebar ul li a{
+#barMenu ul li a{
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -325,12 +360,12 @@
 	white-space: nowrap;
 }
 
-.sidebar ul li a:hover{
+#barMenu ul li a:hover{
 	color: #1d1b31;
 	background: #fff;
 }
 
-.sidebar ul li i{
+#barMenu ul li i{
 	height: 50px;
 	min-width: 50px;
 	border-radius: 12px;
@@ -338,7 +373,7 @@
 	text-align: center;
 	font-size: 22px;
 }
-.sidebar .links_name{
+.links_name{
 	opacity: 0;
 	pointer-events: none;
 	transition: all 0.5s ease;
@@ -348,14 +383,14 @@
 	pointer-events: auto;
 }
 
-.sidebar .profile_content{
+#barMenu .profile_content{
 	position: absolute;
 	color: #fff;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 }
-.sidebar .profile_content .profile{
+#barMenu .profile_content .profile{
 	position: relative;
 	padding: 10px, 6px;
 	height: 60px;
@@ -422,9 +457,12 @@
 	background: none;
 }
 
-@media screen and (max-width:  700px){
+@media screen and (max-width:  700px){	
 	.sidebar{
 		left: -30%;
+	}
+	.movilActive{
+		left: 0;
 	}
 }
 
@@ -444,6 +482,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.movilActive ~ .home_content{
+	left: 78px;
+	width: calc(100% - 78px);
 }
 
 .active ~ .home_content{
