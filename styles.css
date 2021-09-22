@@ -584,10 +584,11 @@
 	overflow: hidden;
 
 	/*EN DESARROLLO*/
-	font-size: 10em;
+	font-size: 3.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 2rem;
 }
 
 .unselect{

@@ -8,12 +8,11 @@
 // /*======== MOSTRAR NAVBAR =============*/
 
 
-let btn = document.querySelector('#btn');
 let sidebar = document.querySelector('.sidebar');
 
-btn.onclick = function(){
+document.querySelector('#btn').addEventListener('click', ()=>{
 	sidebar.classList.toggle('active');
-}
+});
 
 /*============================== INICIO DE SESION =============================*/
 
