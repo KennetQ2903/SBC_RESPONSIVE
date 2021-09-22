@@ -184,7 +184,10 @@
 	-webkit-user-select:  none;
 	user-select: none;
 }
-
+#titulosHeader h1{
+	font-size: 3rem;
+	font-family: "Yu Gothic Light", sans-serif;
+}
 #menuMovil{
 	left: -100%;
 	position: absolute;
@@ -193,10 +196,6 @@
 }
 #menuMovil i{
 	font-size: 3rem;
-}
-#titulosHeader h1{
-	font-size: 3rem;
-	font-family: "Yu Gothic Light", sans-serif;
 }
 
 .movilActive{
@@ -227,6 +226,7 @@
 	#titulosHeader h1{
 		position: relative;
 		left: 2rem;
+		font-size: 1.7rem;
 	}
 	#menuMovil{
 		visibility: visible;
