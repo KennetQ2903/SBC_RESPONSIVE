@@ -48,9 +48,9 @@ body{
 	font-family:  "Yu Gothic Light", sans-serif;
 	font-size: 1.5rem;
 }
-#main-container
+.main-container
 {
-	 min-height: .01%;
+	min-height: .01%;
 	font-family:  "Yu Gothic Light", sans-serif;
 	font-size: 12;
 	margin:5px;
