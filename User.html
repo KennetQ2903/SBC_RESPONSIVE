@@ -33,36 +33,44 @@
 
 	<div class="menuUsuario" id="menuUsuario">
 
-			<div class="main-container">
+			<div id="divTitulo">
+				<h1 id="TITULO">
+					Usuario
+				</h1>
+			</div>
+
+			<div>
 				<a href="#">
 					<button class="btncrear">			
-						Crear Nuevo					
+						Crear Nuevo
+						<i class='bx bx-plus-medical'></i>				
 					</button>
-				</a>	
-				<br><br>
+				</a>				
+			</div>
+			<br>
 
-				<div id="parrafocantRegistros" style="float: left;">
-					<p>
-					Mostrar 
-					<select name="cantRegistros">
-						<option>10</option>
-						<option>25</option>
-						<option>50</option>
-						<option>100</option>
-					</select>
-					registros 
+			<div class="parrafocantRegistros">
+				<p>
+				Mostrar 
+				<select name="cantRegistros">
+					<option>10</option>
+					<option>25</option>
+					<option>50</option>
+					<option>100</option>
+				</select>
+				registros 
 				</p>			
-				</div>
+			</div>
 
-				<div id="parrafoBuscar" style="float: right;">
-					<p>
-						Buscar: 
-						<input type="text" name="buscar" placeholder="Buscar..." />
-					</p>
-				</div>
+			<div class="parrafoBuscar">
+				<p>
+					Buscar: 
+					<input type="text" name="inputBuscar" id="inputBuscar" />
+				</p>				
+			</div>
+			<br><br><br>
 
-				<br><br>
-
+			<div class="main-container" style="overflow-x:auto;">
 				<table>
 					<thead>
 						<tr>
@@ -75,61 +83,54 @@
 						</tr>
 					</thead>
 
-					<tr>
-						<td>cacu01004</td>
-						<td>MARISELA FLORES MAYORGA</td>
-						<td>MARISELA FLORES MAYORGA</td>
-						<td>Cliente</td>
-						<td><i class='bx bx-check'></i></td>
-						<td>
-							<center>
-								<button><span class='bx bx-edit' id="bntModificar"></span></button>
-								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
-							</center>
-						</td>
-					</tr>
+						<tr>
+							<td>cacu01004</td>
+							<td>MARISELA FLORES MAYORGA</td>
+							<td>MARISELA FLORES MAYORGA</td>
+							<td>Cliente</td>
+							<td><i class='bx bx-check'></i></td>
+							<td>
+								<center>
+									<button><span class='bx bx-edit' id="bntModificar"></span>
+									</button>
+									<button><span class='bx bx-x' id="bntEliminar"></span>
+									</button>				
+								</center>
+							</td>
+						</tr>
 
-					<tr>
-						<td>cacu01005</td>
-						<td>JAVIER LOPEZ  MARTINEZ</td>
-						<td>JAVIER LOPEZ MARTINEZ</td>
-						<td>Admin</td>
-						<td><i class='bx bx-check'></i></td>
-						<td>
-							<center>
-								<button><span class='bx bx-edit' id="bntModificar"></span></button>
-								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
-							</center>
-							
-						</td>
-					</tr>
+						<tr>
+							<td>cacu01005</td>
+							<td>JAVIER LOPEZ  MARTINEZ</td>
+							<td>JAVIER LOPEZ MARTINEZ</td>
+							<td>Admin</td>
+							<td><i class='bx bx-check'></i></td>
+							<td>
+								<center>
+									<button><span class='bx bx-edit' id="bntModificar"></span>
+									</button>
+									<button><span class='bx bx-x' id="bntEliminar"></span>
+									</button>				
+								</center>									
+							</td>
+						</tr>
 
-					<tr>
-						<td>cacu0101</td>
-						<td>MARCELA LISETTE FRANZ RUIZ</td>
-						<td>ECHEVA S.A.</td>
-						<td>Cliente</td>
-						<td><i class='bx bx-check'></i></td>
-						<td>
-							<center>
-								<button><span class='bx bx-edit' id="bntModificar"></span></button>
-								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
-							</center>
-							
-						</td>
-					</tr>
-
-				</table>
-				<br>
-
-				<a href="#">
-					<button class="btncrear">			
-						Crear Nuevo			
-					</button>
-				</a>	
-			
+						<tr>
+							<td>cacu0101</td>
+							<td>MARCELA LISETTE FRANZ RUIZ</td>
+							<td>ECHEVA S.A.</td>
+							<td>Cliente</td>
+							<td><i class='bx bx-check'></i></td>
+							<td>
+								<center>
+									<button><span class='bx bx-edit' id="bntModificar"></span>	</button>
+									<button><span class='bx bx-x' id="bntEliminar"></span>
+									</button>				
+								</center>									
+							</td>
+						</tr>							
+				</table>				
 			</div>
-		
-	</div>
+		</div>
 </body>
 </html>

@@ -59,17 +59,18 @@
 				</h1>
 			</div>
 
-			<div id="main-container">
-
+			<div>
 				<a href="#">
 					<button class="btncrear">			
-						Crear Nuevo					
+						Crear Nuevo	
+						<i class='bx bx-plus-medical'></i>				
 					</button>
-				</a>	
-				<br><br>
+				</a>					
+			</div>
+			<br>
 
-				<div id="parrafocantRegistros" style="float: left;">
-					<p>
+			<div class="parrafocantRegistros">
+				<p>
 					Mostrar 
 					<select name="cantRegistros">
 						<option>10</option>
@@ -79,16 +80,17 @@
 					</select>
 					registros 
 				</p>			
-				</div>
+			</div>
 				
-				<div id="parrafoBuscar" style="float: right;">
-					<p>
-						Buscar: 
-						<input type="text" name="buscar" placeholder="Buscar..."/>
-					</p>
-				</div>
-				<br>
+			<div class="parrafoBuscar">
+				<p>
+					Buscar: 
+					<input type="text" name="inputBuscar" id="inputBuscar" />
+				</p>
+			</div>
+			<br><br>
 
+			<div id="main-container" style="overflow-x:auto;">
 				<table>
 					<thead>
 						<tr>
@@ -105,7 +107,7 @@
 							<center>
 								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
 								<button><span class='bx bx-edit' id="bntModificar"></span></button>
-								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>		
 							</center>
 						</td>
 						</tr>
@@ -117,9 +119,8 @@
 							<center>
 								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
 								<button><span class='bx bx-edit' id="bntModificar"></span></button>
-								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
-							</center>
-							
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>		
+							</center>							
 						</td>
 					</tr>
 
@@ -130,21 +131,11 @@
 							<center>
 								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
 								<button><span class='bx bx-edit' id="bntModificar"></span></button>
-								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
-							</center>
-							
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>		
+							</center>							
 						</td>
 					</tr>
-
-				</table>
-				<br>
-
-				<a href="#">
-					<button class="btncrear">			
-						Crear Nuevo			
-					</button>
-				</a>	
-			
+				</table>					
 			</div>
 		</div>
 </body>

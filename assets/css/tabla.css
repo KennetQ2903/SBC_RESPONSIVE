@@ -2,8 +2,7 @@ body{
 	overflow: hidden;
 }
 #menuUsuario{
-	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow: hidden;
 	display: inline-block;
 }
 #menuUsuario::-webkit-scrollbar{
@@ -30,22 +29,46 @@ body{
 	font-size: 2em;
 	font-family:  "Yu Gothic Light", sans-serif;
 }
+.parrafocantRegistros{
+	float: left;
+}
 
+.parrafoBuscar{
+	float: right;	
+}
+
+#inputBuscar{
+	color: black;
+	height: 2rem;
+	padding-left: 1rem;
+	outline: none;
+	border-radius: 32px;
+	border-style: none;
+	background: rgba(60, 60, 60, 0.3)
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 1.5rem;
+}
 #main-container
 {
-	 margin-left: .5rem;
 	 min-height: .01%;
-     overflow-x: auto;
-     font-family:  "Yu Gothic Light", sans-serif;
+	font-family:  "Yu Gothic Light", sans-serif;
+	font-size: 12;
+	margin:5px;
+    padding:5px;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align:justify;
 }
 
 .btncrear{
-	background-color: #1F618D;
-	color: white;
-	font-family:  "Yu Gothic Light", sans-serif;
-	font-weight: bold;
-	border-radius: 15px;
-	padding: 10px;
+	text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: #1F618D;
+    border-radius: 15px;
+    border: 3px solid #1F618D;
 }
 
 table{
@@ -93,6 +116,11 @@ tr:hover td{
         -ms-overflow-style: -ms-autohiding-scrollbar;
         border: 1px solid #ddd;
     }
+    .parrafoBuscar{
+    	float: left;
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+	}
     th{
 		font-size: .8rem;
 		text-align: center;
