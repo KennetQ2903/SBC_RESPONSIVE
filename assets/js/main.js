@@ -267,6 +267,9 @@ function posGruposSuministros(){
 
 	document.getElementById('btnPuntosSuministros').style.color = "rgba(0, 0, 0, 0.4)";
 	document.getElementById('btnPuntosSuministros').style.borderColor = "rgba(0, 0, 0, 0.4)";
+
+	document.getElementById('contentGruposSuministros').style.visibility = "visible";
+	document.getElementById('contentPuntosSuministros').style.visibility = "hidden";
 }
 
 function posPuntosSuministros(){
@@ -278,6 +281,9 @@ function posPuntosSuministros(){
 
 	document.getElementById('btnGruposSuministros').style.color = "rgba(0, 0, 0, 0.4)";
 	document.getElementById('btnGruposSuministros').style.borderColor = "rgba(0, 0, 0, 0.4)";
+
+	document.getElementById('contentGruposSuministros').style.visibility = "hidden";
+	document.getElementById('contentPuntosSuministros').style.visibility = "visible";
 }
 
 
